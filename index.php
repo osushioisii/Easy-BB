@@ -30,12 +30,11 @@ if ($regist) {
 </section>
 
 <section>
-	<h2>投稿内容一覧</h2>
+	<h2>コメント</h2>
 		<?php foreach($regist as $loop):?>
-			<div>No:<?php echo $loop['id']?></div>
+			<div>id:<?php echo $loop['id']?></div>
 			<div>名前：<?php echo $loop['name']?></div>
-			<div>投稿内容：<?php echo $loop['contents']?></div>
-			<div>------------------------------------------</div>
+			<div>コメント：<?php echo $loop['contents']?></div>
 		<?php endforeach;?>
 	
 </section>
